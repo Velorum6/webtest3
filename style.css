@@ -83,3 +83,7 @@ body{
 .menu.active .toggle{
     transform: rotate(315deg);
 }
+
+.material-icons{
+ font-size:32 !important;   
+}
