@@ -52,10 +52,12 @@ body{
     transform: rotate(calc(360deg/ -8 * var(--i)));
     text-decoration: none;
     color: black;
+    border: 2px solid white;
 }
 
 .menu li a:hover{
     color: white;
+    transition:0.5s;
 }
 .menu.active li{
     transform: rotate(calc(360deg / 8 * var(--i)));
@@ -66,8 +68,8 @@ body{
 }
 .toggle{
     position:absolute;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     background: #fff;
     display: flex;
     justify-content: center;
