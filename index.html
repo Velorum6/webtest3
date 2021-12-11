@@ -30,7 +30,7 @@
                     </span></a>
             </li>
             <li style="--i:3;">
-                <a onclick="clicked()"><span class="material-icons">
+                <a id="planet" onclick="clicked()"><span class="material-icons">
                     public
                     </span></a>
             </li>
@@ -61,22 +61,12 @@
             toggle.onclick = function() {
                 menu.classList.toggle('active')
             }
-            let j = 0;
-            function clicked(){
-                if(j==0){
-                    document.getElementById("img").style.display="inline";
-                    j++
-                    return img=0;
-                } else if (img==1){
-                    document.getElementById("img").style.display="inline";
-                    j++
-                    return img=0
-                } else if (img!=1){
-                    document.getElementById("img").style.display="none";
-                    j++
-                    return img=1;
-                }
+            let image = document.querySelector('.image')
+            let toggle2 = document.getElementById('planet')
+            toggle2.onclick = function() {
+                image.classList.toggle('active');
             }
+            
         </script>
     </section>
     
