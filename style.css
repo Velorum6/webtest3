@@ -17,7 +17,7 @@ body{
     height: 100%;
     background-size:cover;
     display: flex;
-    justify-content: left center;
+    justify-content: left;
     align-items:center;
     min-height:100vh;
 }
@@ -96,9 +96,14 @@ body{
 
 .image{
     position:absolute;
-    left: 50%;
+    left:40%;
+    bottom: 60%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
     border-radius:100%;
-    width: 350px;
+    width: 350;
     height: 350px;
     border:2px solid white;
     background: url(images/r2-0-47037165518489212697874560262408687111517733951041717944556933304871498110439.gif);
@@ -115,6 +120,93 @@ body{
     opacity:1;
 }
 
+.image-text{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px black;
+    top: 230px;
+    font-size: 30px;
+    
+}
+
+.image2{
+    position:absolute;
+    left: 70%;
+    bottom: 60%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    border-radius:100%;
+    width: 350;
+    height: 350px;
+    border:2px solid white;
+    background: url(images/r3-0-114707176872000824504317459176965269130541069174340429764194016311957222623689.gif);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5),
+                inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.image2.active{
+    opacity:1;
+}
+
+.image2-text{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px black;
+    top: 230px;
+    font-size: 30px;
+    
+}
+
+.image3{
+    position:absolute;
+    left:55%;
+    top: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    border-radius:100%;
+    width: 350;
+    height: 350px;
+    border:2px solid white;
+    background: url(images/r3-38-79556081482492136749522167926414241822209249319613687958235999809113168243265.gif);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5),
+                inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.image3.active{
+    opacity:1;
+}
+
+.image3-text{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px black;
+    top: 230px;
+    font-size: 30px;
+    
+}
 @keyframes fadeIn{
     0% {
         opacity: 0;

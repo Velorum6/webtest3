@@ -8,6 +8,19 @@
     <body>
      <section class="header">
         <div id="img" class="image">
+            <div class="image-text">
+                Afraid Canvas Giant (lvl3) - Round 2
+            </div>
+        </div>
+        <div id="img2" class="image2">
+            <div class="image2-text">
+                Baseball Diminish Actor (lvl3) - Round 3
+            </div>
+        </div>
+        <div id="img3" class="image3">
+            <div class="image2-text">
+                Theory Insect (lvl2) - Round 3
+            </div>
         </div>
         <div class="menu">
             <div class="toggle"><span class="material-icons md-48">
@@ -62,9 +75,13 @@
                 menu.classList.toggle('active')
             }
             let image = document.querySelector('.image')
+            let image2 = document.querySelector('.image2')
+            let image3 = document.querySelector('.image3')
             let toggle2 = document.getElementById('planet')
             toggle2.onclick = function() {
                 image.classList.toggle('active');
+                image2.classList.toggle('active');
+                image3.classList.toggle('active');
             }
             
         </script>
