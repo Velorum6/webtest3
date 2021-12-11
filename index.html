@@ -7,6 +7,8 @@
     </head>
     <body>
      <section class="header">
+        <div id="img" class="image">
+        </div>
         <div class="menu">
             <div class="toggle"><span class="material-icons md-48">
             add
@@ -28,8 +30,8 @@
                     </span></a>
             </li>
             <li style="--i:3;">
-                <a href="#"><span class="material-icons">
-                    tag
+                <a onclick="clicked()"><span class="material-icons">
+                    public
                     </span></a>
             </li>
             <li style="--i:4;">
@@ -59,7 +61,24 @@
             toggle.onclick = function() {
                 menu.classList.toggle('active')
             }
+            let j = 0;
+            function clicked(){
+                if(j==0){
+                    document.getElementById("img").style.display="inline";
+                    j++
+                    return img=0;
+                } else if (img==1){
+                    document.getElementById("img").style.display="inline";
+                    j++
+                    return img=0
+                } else if (img!=1){
+                    document.getElementById("img").style.display="none";
+                    j++
+                    return img=1;
+                }
+            }
         </script>
     </section>
+    
     </body>
 </html>

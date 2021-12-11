@@ -88,4 +88,16 @@ body{
 
 .material-icons{
  font-size:32 !important;   
+ cursor: pointer !important;
+}
+
+.image{
+    position:absolute;
+    display: none;
+    left: 50%;
+    border-radius:100%;
+    width: 350px;
+    height: 350px;
+    border:1px solid white;
+    background: url(../images/r2-0-47037165518489212697874560262408687111517733951041717944556933304871498110439.gif);
 }
