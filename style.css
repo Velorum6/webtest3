@@ -98,6 +98,25 @@ body{
     border-radius:100%;
     width: 350px;
     height: 350px;
-    border:1px solid white;
-    background: url(../images/r2-0-47037165518489212697874560262408687111517733951041717944556933304871498110439.gif);
+    border:2px solid white;
+    background: url(images/r2-0-47037165518489212697874560262408687111517733951041717944556933304871498110439.gif);
+    animation: fade 0.5s ease;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
