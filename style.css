@@ -88,7 +88,8 @@ body{
 
 .material-icons{
  font-size:32 !important;   
- cursor: pointer !important;
+ cursor: pointer;
+ user-select: none;
 }
 
 .image{
