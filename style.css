@@ -100,7 +100,7 @@ body{
     height: 350px;
     border:2px solid white;
     background: url(images/r2-0-47037165518489212697874560262408687111517733951041717944556933304871498110439.gif);
-    opacity: 1;
+    opacity: 0;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -ms-transition: opacity 0.5s ease-in-out;
@@ -108,7 +108,7 @@ body{
 }
 
 .image.active{
-    opacity:0;
+    opacity:1;
 }
 
 @keyframes fadeIn{
