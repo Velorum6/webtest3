@@ -96,7 +96,7 @@ body{
 
 .amv{
     opacity: 0;
-    position:absolute; 
+    position:absolute;
     bottom:33%; 
     right:20%;
     -webkit-transition: opacity 0.5s ease-in-out;
