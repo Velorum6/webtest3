@@ -2,11 +2,15 @@
     <head>
         <title>DON'T LOOK HERE</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
      <section class="header">
+        <div class="text">
+            <h2 class="text-body">Hey, I'm Velorum!<br><br>I'm a Dark Forest player and DrStone fan
+            </h2>
+        </div>
         <div id="img" class="image">
             <div class="image-text">
                 Afraid Canvas Giant (lvl3) - Round 2
@@ -43,19 +47,17 @@
                     </span></a>
             </li>
             <li style="--i:3;">
-                <a id="planet" onclick="clicked()"><span class="material-icons">
+                <a id="planet"><span class="material-icons">
                     public
                     </span></a>
             </li>
             <li style="--i:4;">
-                <a href="#"><span class="material-icons">
-                    block
+                <a id="article"><span class="material-icons">
+                    article
                     </span></a>
             </li>
             <li style="--i:5;">
-                <a href="#"><span class="material-icons">
-                    add_link
-                    </span></a>
+                <a href="https://twitter.com/TheVelorum"><i class="fa fa-twitter" style="font-size:36px"></i></a>
             </li>
             <li style="--i:6;">
                 <a href="#"><span class="material-icons">
@@ -79,9 +81,18 @@
             let image3 = document.querySelector('.image3')
             let toggle2 = document.getElementById('planet')
             toggle2.onclick = function() {
+                text.classList = 'text';
                 image.classList.toggle('active');
                 image2.classList.toggle('active');
                 image3.classList.toggle('active');
+            }
+            let text = document.querySelector('.text')
+            let toggle3 = document.getElementById('article')
+            toggle3.onclick = function() {
+                text.classList.toggle('active');
+                image.classList = "image";
+                image2.classList ='image2';
+                image3.classList = 'image3';
             }
             
         </script>
