@@ -60,9 +60,7 @@
                 <a href="https://twitter.com/TheVelorum"><i class="fa fa-twitter" style="font-size:36px"></i></a>
             </li>
             <li style="--i:6;">
-                <a href="#"><span class="material-icons">
-                    weekend
-                    </span></a>
+                <a id="drstone"><img src="images\tumblr_12447e1b73c86325cc8376a1c8665aa1_835124a4_400.jpg" width="85px" style="border-radius:50%"> </a>
             </li>
             <li style="--i:7;">
                 <a href="#"><span class="material-icons">
@@ -70,7 +68,7 @@
                     </span></a>
             </li>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/x6wJV3Ibeoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0;"></iframe>
+        <iframe class="amv"width="560" height="315" src="https://www.youtube.com/embed/x6wJV3Ibeoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <script>
             let toggle = document.querySelector('.toggle')
             let menu = document.querySelector('.menu')
@@ -86,6 +84,7 @@
                 image.classList.toggle('active');
                 image2.classList.toggle('active');
                 image3.classList.toggle('active');
+                amv.classList = 'amv';
             }
             let text = document.querySelector('.text')
             let toggle3 = document.getElementById('article')
@@ -94,6 +93,17 @@
                 image.classList = "image";
                 image2.classList ='image2';
                 image3.classList = 'image3';
+                amv.classList = 'amv';
+            }
+            let amv = document.querySelector('.amv')
+            let toggle4 = document.getElementById('drstone')
+            toggle4.onclick = function() {
+                amv.classList.toggle('active');
+                image.classList = "image";
+                image2.classList ='image2';
+                image3.classList = 'image3';
+                text.classList = 'text';
+                amv.classList = 'amv';
             }
             
         </script>
