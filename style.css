@@ -100,14 +100,74 @@ body{
     box-shadow: 0 0 50px rgb(24,109,109,0.35);
     bottom:33%; 
     right:20%;
+    pointer-events: none;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -ms-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
 }
 
+.drstonebutton{
+    position:relative;
+    left:240%;
+    top:240;
+    opacity: 0;
+    width: 130px;
+    height: 50px;
+    pointer-events: none;
+    background: black;
+    border-radius: 5%;
+    box-shadow: 0 0 50px rgb(24, 109, 109, 0.35);
+    color: white;
+    font-size: 10px;
+    font-family: arial;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+}
+
+.drstonebutton.active{
+    opacity:1;
+    pointer-events: all;
+}
+
+.drstonebuttonen{
+    position:relative;
+    left:400%;
+    top:190px;
+    opacity: 0;
+    width: 150px;
+    height: 50px;
+    pointer-events: none;
+    background: black;
+    border-radius: 5%;
+    box-shadow: 0 0 50px rgb(24, 109, 109, 0.35);
+    color: white;
+    font-size: 10px;
+    font-family: arial;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;    
+}
+
+.drstonebuttonen.active{
+    opacity:1;
+    pointer-events: all;
+}
+
 .amv.active{
     opacity: 1;
+    pointer-events:all;
 }
 
 .image{

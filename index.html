@@ -60,7 +60,7 @@
                 <a href="https://twitter.com/TheVelorum"><i class="fa fa-twitter" style="font-size:36px"></i></a>
             </li>
             <li style="--i:6;">
-                <a id="drstone"><img src="images\tumblr_12447e1b73c86325cc8376a1c8665aa1_835124a4_400.jpg" width="85px" style="border-radius:50%"> </a>
+                <a id="drstone"><img src="images\tumblr_12447e1b73c86325cc8376a1c8665aa1_835124a4_400.jpg" width="85px" style="border-radius:50%; user-select:none;"> </a>
             </li>
             <li style="--i:7;">
                 <a href="#"><span class="material-icons">
@@ -68,7 +68,11 @@
                     </span></a>
             </li>
         </div>
-        <iframe class="amv" width="560" height="315" src="https://www.youtube.com/embed/x6wJV3Ibeoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+        <div>
+        <iframe class="amv" width="560" height="315" src="https://www.youtube.com/embed/x6wJV3Ibeoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%; user-select:none;"> </iframe>
+        <a href="https://www3.animeflv.net/ver/dr-stone-1" class="drstonebutton"><h1>Ver DrStone 🇪🇸</h1></a>
+        <a href="https://animebee.to/watch/dr-stone-4y4e/episode-1.html" class="drstonebuttonen"><h1>Watch DrStone EN</h1></a>
+        </div>
         <script>
             let toggle = document.querySelector('.toggle')
             let menu = document.querySelector('.menu')
@@ -85,6 +89,8 @@
                 image2.classList.toggle('active');
                 image3.classList.toggle('active');
                 amv.classList = 'amv';
+                drstonebutton.classList = 'drstonebutton';
+                drstonebuttonen.classList= 'drstonebuttonen';
             }
             let text = document.querySelector('.text')
             let toggle3 = document.getElementById('article')
@@ -94,10 +100,16 @@
                 image2.classList ='image2';
                 image3.classList = 'image3';
                 amv.classList = 'amv';
+                drstonebutton.classList = 'drstonebutton';
+                drstonebuttonen.classList= 'drstonebuttonen';
             }
+            let drstonebuttonen = document.querySelector('.drstonebuttonen')
             let amv = document.querySelector('.amv')
+            let drstonebutton = document.querySelector('.drstonebutton')
             let toggle4 = document.getElementById('drstone')
             toggle4.onclick = function() {
+                drstonebuttonen.classList.toggle('active');
+                drstonebutton.classList.toggle('active');
                 amv.classList.toggle('active');
                 image.classList = "image";
                 image2.classList ='image2';
