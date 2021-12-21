@@ -115,9 +115,10 @@ body{
     width: 130px;
     height: 50px;
     pointer-events: none;
-    background: black;
+    background: rgb(0, 0, 0, 0.6);
     border-radius: 5%;
-    box-shadow: 0 0 50px rgb(24, 109, 109, 0.35);
+    box-shadow: 0 0 50px rgb(24, 109, 109, 0.35),
+                inset 0 0 20px rgb(255, 255, 255, 0.05);
     color: white;
     font-size: 10px;
     font-family: arial;
@@ -144,9 +145,10 @@ body{
     width: 150px;
     height: 50px;
     pointer-events: none;
-    background: black;
+    background: rgb(0, 0, 0, 0.6);
     border-radius: 5%;
-    box-shadow: 0 0 50px rgb(24, 109, 109, 0.35);
+    box-shadow: 0 0 50px rgb(24, 109, 109, 0.35),
+                inset 0 0 20px rgb(255, 255, 255, 0.05);
     color: white;
     font-size: 10px;
     font-family: arial;
